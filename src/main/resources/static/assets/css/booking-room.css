@@ -1,0 +1,404 @@
+.display-none {
+    display: none !important;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.cart {
+    margin-top: 102px;
+    margin-bottom: 48px;
+}
+
+.cart__step {
+    width: 80%;
+    margin: auto;
+}
+
+.cart__step-list {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.cart__step-item {
+    display: flex;    
+    align-items: center;
+}
+
+.cart__step-item-number {
+    padding: 0.8rem 1.6rem;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-right: 0.8rem;
+}
+
+.cart__step-item-number.active {
+    background-color: var(--yellow-color);
+}
+
+.cart__step-item-desc {
+    font-size: 2rem;
+}
+/* Begin */
+.cart__date {
+    margin-top: 48px;
+    display: flex;
+    background-color: var(--yellow-color);
+    padding: 1.6rem;
+    border-radius: 5px;
+}
+
+.cart__date-part {
+    width: 250px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.cart__date-title {
+    color: var(--text-color);
+}
+
+.cart__date-date {
+    color: red;
+    margin-left: 0.8rem;
+}
+/* End */
+.cart__heading {
+    margin-top: 48px;
+    background-color: var(--primary-color);
+    padding: 1.6rem 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.cart__orders {
+    margin-top: 1.6rem;
+}
+
+.cart__order-info {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 1.6rem 1.6rem;
+}
+
+.cart__order-info + .cart__order-info {
+    margin-top: 1.6rem;
+}
+
+.cart__room {
+    position: relative;
+}
+
+.cart__room-wrapper {
+    display: flex;
+    font-size: 1.4rem;
+}
+
+.cart__room-img {
+    width: 50%;
+    border-radius: 3px;
+}
+
+.cart__room-desc {
+    margin-left: 1.6rem;
+}
+
+.cart__room-type {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cart__room-info {
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.cart__room-service {
+    padding: 0.4rem;
+}
+
+.cart__room-service-icon {
+    width: 1.6rem;
+    text-align: center;
+    margin-right: 0.4rem;
+}
+
+.cart__people-block {
+    display: flex;
+}
+
+.cart__people-quantity {
+    margin: auto;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.cart__people-quantity-icon {
+    font-size: 2rem;
+}
+
+/* .cart__people-quantity-number {} */
+
+.cart__price-block {
+    display: flex;
+}
+
+.cart__price {
+    margin: auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cart__price-number {
+    font-weight: 500;
+}
+
+.cart__price-unit {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.cart__room-quantity-block {
+    display: flex;
+}
+
+.cart__room-quantity {
+    margin: auto;
+    font-size: 1.6rem;
+    width: 50%;
+}
+
+.cart__room-quantity-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart__room-quantity-increase,
+.cart__room-quantity-decrease {
+    padding: 0.4rem 1rem;
+}
+
+.cart__room-quantity-number {
+    width: 3.8rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.1rem 0;
+    border: none;
+    box-shadow: var(--box-shadow-degree);
+}
+
+.cart__room-quantity-rest {
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+.cart__room-quantity-empty {
+    font-size: 1.6rem;
+}
+
+.cart__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 0.9rem ;
+    color: var(--white-color);
+}
+.cart__close-icon {
+    padding-top: 2px;
+    padding-left: 1px;
+    font-size: 1.3rem;
+}
+
+/* Total payment */
+.cart__total-container {
+    margin-top: 16px;
+}
+
+.cart__total {
+    width: 50%;
+    margin-left: auto;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 1.6rem;
+}
+
+.cart__total-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.cart__total-list-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+
+
+.cart__total-room-type {
+    flex: 1.4;
+}
+
+.cart__total-room-detail {
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+}
+
+.cart__total-room-qtt {
+    color: var(--cancel-button-color);
+}
+
+/* .cart__total-room-mutiply {} */
+
+/* .cart__total-room-price */
+
+.cart__total-room-value {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* .cart__total-room-equal {} */
+
+
+.cart__total-wrapper {
+    margin-top: 1.6rem;
+}
+
+.cart__total-info {
+    font-size: 1.6rem;
+}
+
+.cart__total-info-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart__total-info-title {
+    flex: 1.4;
+    display: inline-block;
+    width: 14rem;
+}
+
+.cart__total-info-value {
+    flex: 1;
+    text-align: right;
+}
+
+.cart__total-info-room,
+.cart__total-info-night,
+.cart__total-info-number,
+.cart__total-info-price {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.cart__total-info-currency {
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-right: 0.4rem;
+}
+
+.cart__total-book {
+    margin-top: 3.2rem;
+    width: 50%;
+    margin-left: auto;
+    text-align: right;
+}
+
+.cart__total-btn{
+    display: inline-block;
+    min-width: 15rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
+.cart__error {
+    font-size: 1.4rem;
+    text-align: right;
+    margin-top: 0.8rem;
+    color: var(--cancel-button-color);
+}
+/* Empty Cart */
+.cart__empty {
+    text-align: center;
+}
+
+.cart__empty-img {
+    width: 50%;
+}
+
+.cart__empty-content {
+    margin-top: 4.8rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cart__empty-btn {
+    margin-top: 1.6rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Modal */
+.modal__type--exclamation {
+    --modal-type: #fbd447;
+}
+
+
+.modal__type--done {
+    --modal-type: var(--done-button-color);
+}
+
+.modal__notification {
+    color: var(--text-color);
+    width: 400px;
+    text-align: center;
+    background-color: var(--white-color);
+    border: 4px solid var(--modal-type);
+    border-radius: 10px;
+    user-select: none;
+    padding-bottom: 1.6rem;
+}
+
+.modal__notification-heading {
+    font-size: 6rem;
+    color: var(--modal-type);
+}
+
+.modal__notification-title {
+    margin-bottom: 0;
+    font-size: 1.6rem;    
+}
+
+.modal__notification-buttons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 3.2rem;
+}
+
+.modal__notification-cancel,
+.modal__notification-confirm {
+    padding: 0.8rem 0;
+    color: var(--white-color);
+    min-width: 10rem;
+}

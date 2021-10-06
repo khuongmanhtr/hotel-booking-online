@@ -1,0 +1,237 @@
+.bookingcode__section {
+    margin-top: 102px;
+    margin-bottom: 48px;
+    color: var(--text-color);
+}
+
+.bookingcode_heading {
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: 2.4rem;
+    letter-spacing: 0.3rem;
+}
+
+.bookingcode_code {
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.6rem 0;
+    background-color: var(--primary-color);
+}
+
+.bookingcode_code-hightlight {
+    color: red;
+}
+
+.bookingcode__title {
+    display: flex;
+    margin-top: 3.2rem;
+    margin-bottom: 0;
+    background-color: var(--primary-color);
+    padding: 1.6rem 1.6rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.bookingcode__title-item {
+    flex: 1;
+}
+
+.bookingcode__title-rest {
+    flex: 0.7;
+    text-align: center;
+}
+
+.bookingcode__heading {
+    background-color: var(--yellow-color);
+    padding: 0.8rem 1.6rem;
+    border-radius: 5px;
+    margin-top: 3.2rem;
+}
+
+.bookingcode__heading-part {
+    font-size: 1.6rem;
+    padding: 0.4rem 0;
+}
+
+.bookingcode__heading-title {
+    color: var(--text-color);
+    display: inline-block;
+    min-width: 10rem;
+    font-weight: 500;
+}
+
+.bookingcode__heading-date {
+    color: var(--cancel-button-color);
+    font-weight: 500;
+    margin-left: 0.8rem;
+}
+
+.bookingcode__info {
+    margin-top: 1.6rem;
+    background-color: var(--primary-color);
+    padding: 1.6rem;
+    border-radius: 5px;
+}
+
+.bookingcode__info-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.bookingcode__info-wrapper {
+    display: flex;
+    margin-top: 0.8rem;
+    font-size: 1.6rem;
+}
+
+.bookingcode__detail {
+    flex: 1;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.bookingcode__detail-item {
+    display: flex;
+    padding: 0.4rem 0;
+}
+
+.bookingcode__detail-item-caption {
+    font-weight: 500;
+    flex: 0.8;
+}
+
+.bookingcode__detail-item-desc {
+    flex: 1
+}
+
+.bookingcode__service {
+    flex: 1;
+}
+
+.bookingcode__service-list {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.bookingcode__service-list-item {
+    padding: 0.4rem 0;
+}
+
+.bookingcode__service-list-icon {
+    width: 1.6rem;
+    text-align: center;
+    margin-right: 0.4rem;
+}
+
+.bookingcode__action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0.7;
+}
+
+.bookingcode__action-cancel {
+    padding: 1.2rem 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+
+.bookingcode__action-non-cancellable {
+    padding: 1.2rem 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    cursor: default;
+    color: var(--white-color);
+    background-color: #a7a7a7;
+}
+
+.bookingcode__action-icon {
+    font-size: 1.6rem;
+    margin-right: 0.4rem;
+}
+
+.bookingcode__action-note {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.bookingcode-notfound {
+    display: flex;
+    margin-top: 48px;
+    height: 29vh;
+    margin-bottom: 0;
+}
+
+.bookingcode__notfound-block {
+    margin: auto;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.bookingcode__notfound-content {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.bookingcode__notfound-btn {
+    display: inline-block;
+    margin-top: 1.6rem;
+    padding: 1rem 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* Modal */
+.modal__type--exclamation {
+    --modal-type: #fbd447;
+}
+
+.modal__type--done {
+    --modal-type: var(--done-button-color);
+}
+
+.modal__notification {
+    color: var(--text-color);
+    width: 400px;
+    text-align: center;
+    background-color: var(--white-color);
+    border: 4px solid var(--modal-type);
+    border-radius: 10px;
+    user-select: none;
+    padding-bottom: 1.6rem;
+}
+
+.modal__notification-heading {
+    font-size: 6rem;
+    color: var(--modal-type);
+}
+
+.modal__notification-title {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+}
+
+.modal__notification-buttons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 3.2rem;
+}
+
+.modal__notification-okay,
+.modal__notification-cancel,
+.modal__notification-confirm {
+    padding: 0.8rem;
+    color: var(--white-color);
+    min-width: 10rem;
+}

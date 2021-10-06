@@ -1,0 +1,109 @@
+<div class="pagination-section">
+    <div class="pagination__container">
+        <div class="pagination__prev">
+            <!-- add class "display-none to hide" -->
+            <a href="#" class="pagination__prev-link">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <ul class="pagination__page">
+            <li class="pagination__page-number">
+                <!-- add class "active" to show current active -->
+                <a href="#" class="pagination__page-link">1</a>
+            </li>
+            <li class="pagination__page-number">
+                <a href="#" class="pagination__page-link active">2</a>
+            </li>
+            <li class="pagination__page-number">
+                <a href="#" class="pagination__page-link">3</a>
+            </li>
+            <li class="pagination__page-number">
+                <a href="#" class="pagination__page-link">4</a>
+            </li>
+            <li class="pagination__page-number">
+                <a href="#" class="pagination__page-link">5</a>
+            </li>
+        </ul>
+        <div class="pagination__next">
+            <!-- add class "display-none to hide" -->
+            <a href="#" class="pagination__next-link">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- File CSS đã có sẵn trong "header_footer.css" nhưng lưu lại đề phòng-->
+<style>
+
+        /* Pagination */
+    .pagination-section {
+        margin-top: 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    .pagination__container {
+        display: flex;
+        margin: auto;
+    }
+
+    .pagination__next, 
+    .pagination__prev {
+        width: 4rem;
+    }
+
+    .pagination__prev-link, 
+    .pagination__next-link {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--text-color);
+        text-align: center;
+        padding: 0.8rem 0;
+        background-color: var(--primary-color);
+        border-radius: 3px;
+    }
+
+    .pagination__prev-link.display-none, 
+    .pagination__next-link.display-none {
+        display: none;
+    }
+
+    .pagination__page {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 4rem;
+        padding-left: 0;
+    }
+
+    .pagination__page-number {
+        margin: 0 0.4rem;
+    }
+
+    .pagination__page-link {
+        display: block;
+        width: 4rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--text-color);
+        text-align: center;
+        padding: 0.8rem 0;
+        background-color: var(--primary-color);
+        border-radius: 3px;
+    }
+
+    .pagination__page-link.active, 
+    .pagination__page-link.active:hover {
+        background-color: var(--text-color);
+        color: var(--white-color);
+        cursor: default;
+    }
+
+    .pagination__prev-link:hover,
+    .pagination__next-link:hover, 
+    .pagination__page-link:hover {
+        background-color: #ccc;
+        color: var(--text-color);
+    }
+</style>

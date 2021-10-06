@@ -1,0 +1,2576 @@
+.management {
+    margin-top: 102px;
+    margin-bottom: 48px;
+    min-height: 40vh;
+}
+
+.management__category {
+    padding-left: 0;
+    margin-bottom: 0;
+    min-height: 155px;
+    background-color: var(--blue-1-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-blue);
+}
+
+.management__category-module + .management__category-module {
+    border-top: 1px solid var(--blue-2-color);
+}
+
+.management__category-module-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.8rem 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: all 0.15s ease-in;
+}
+
+.management__category-module-link.active,
+.management__category-module-link:hover.active {
+    color: var(--text-color);
+    background-color: var(--blue-3-color);
+    cursor: default;
+}
+
+.management__category-module-link:hover {
+    color: var(--text-color);
+    background-color: var(--blue-2-color);
+}
+
+.management__category-module-icon {
+    font-size: 1.4rem;
+    width: 1.6rem;
+    margin-right: 1.6rem;
+}
+
+
+.management__category-module-link.active .management__category-module-number,
+.management__category-module-link:hover .management__category-module-number {
+    background-color: #b52e2e;
+}
+
+.management__category-module-number {
+    position: absolute;
+    right: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    text-align: center;
+    color: var(--white-color);
+    /* padding: 0.2rem 0.4rem; */
+    background-color: var(--cancel-button-color);
+    border-radius: 50%;
+}
+
+/* .management__dashboard {} */
+
+.management__dashboard-upper {
+    background-color: var(--blue-1-color);
+    border-radius: 5px;
+    padding: 1.6rem;
+	border-top: 1px solid #cbcccd;
+    box-shadow: var(--box-shadow-blue);
+}
+
+.management__dashboard-heading-list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid var(--blue-2-color);
+}
+
+/* .management__dashboard-heading-item {} */
+
+.management__dashboard-heading-item + .management__dashboard-heading-item {
+    margin-left: 1.6rem;
+}
+
+.management__dashboard-heading-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.8rem 1.6rem;
+    background-color: var(--white-color);
+    transition: all 0.15s ease-in;
+}
+
+.management__dashboard-heading-link.active,
+.management__dashboard-heading-link:hover.active {
+    color: var(--text-color);
+    background-color: var(--blue-3-color);
+    cursor: default;
+    border-color: var(--text-color);
+}
+
+.management__dashboard-heading-link:hover {
+    background-color: var(--blue-4-color);
+    color: var(--white-color);
+}
+
+.management__dashboard-monitor {
+    margin-top: 1.6rem;
+    min-height: 50vh;
+}
+
+.management__dashboard-search {
+    font-size: 1.5rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid var(--blue-2-color);
+}
+
+.management__dashboard-search-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%;
+    margin: auto;
+}
+
+.management__dashboard-search-form + .management__dashboard-search-form {
+    margin-top: 1.6rem;
+}
+
+
+
+.management__dashboard-search-title {
+    font-weight: 500;
+    min-width: 40%;
+}
+
+.management__dashboard-search-input,
+.management__dashboard-search-option {
+    flex: 1;
+    padding: 0.4rem 0.8rem;
+    border: none;
+	box-shadow: var(--box-shadow-button);
+    border-radius: 3px;
+    background-color: var(--white-color);
+}
+
+.management__dashboard-search-btn {
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    justify-self: flex-end;
+	margin-top: 0.8rem;
+}
+
+.management__dashboard-search-btn:hover {
+    color: var(--white-color);
+}
+
+.management__dashboard-table th:nth-child(1) {
+    width: 10%;
+}
+
+.management__dashboard-table th:nth-child(2) {
+    width: 18%;
+}
+
+.management__dashboard-table th:nth-child(3) {
+    width: 24%;
+}
+
+.management__dashboard-table th:nth-child(4),
+.management__dashboard-table th:nth-child(5),
+.management__dashboard-table th:nth-child(6) {
+    width: 16%;
+}
+
+/* .management__dashboard-pagination {} */
+
+/*------------------------------------Booking code--------------------------------- */ 
+.management__bookingcode-table th:nth-child(1) {
+    width: 17%;
+}
+.management__bookingcode-table th:nth-child(6) {
+    width: 14%;
+}
+
+.management__bookingcode-table th:nth-child(2) {
+    width: 24%;
+}
+
+.management__bookingcode-table th:nth-child(3),
+.management__bookingcode-table th:nth-child(4),
+.management__bookingcode-table th:nth-child(5) {
+    width: 15%;
+}
+
+/* .management__dashboard-pagination {} */
+
+.management__bookingcode-table-view-detail {
+    padding: 0.4rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-width: 9rem;
+    text-align: center;
+}
+
+.management__bookingcode-table-view-detail:hover {
+    color: var(--white-color);
+}
+
+.management__bookingcode-table-cannot-check {
+	min-height: 25px;
+}
+/* Modal */
+.modal__bookingcode {
+    position: relative;
+    width: 650px;
+    height: 550px;
+    background-color: var(--blue-1-color);
+    border-radius: 10px;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+}
+
+.modal__bookingcode-heading {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.modal__bookingcode-infor {
+    margin-top: 0.8rem;
+    border-radius: 5px;
+}
+
+.modal__bookingcode-infor-detail {
+    display: flex;
+    align-items: center;
+    margin: 0.4rem 0;
+}
+
+.modal__bookingcode-infor-title {
+    display: inline-block;
+    min-width: 15rem;
+    font-weight: 500;
+}
+
+.modal__bookingcode-infor-desc {
+    font-weight: 400;
+}
+
+.modal__bookingcode-room-heading {
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-top: 2.4rem;
+    margin-bottom: 0;
+}
+
+.modal__bookingcode-room-wrapper {
+    margin-top: 0.8rem;
+    height: 59%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0.3px rgba(27, 108, 218, 0.502);
+    
+}
+
+.modal__bookingcode-room-list {
+    margin-bottom: 0;
+    padding-left: 0;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--white-color);
+} 
+
+.modal__bookingcode-room-item {
+    border-left: 5px solid var(--blue-3-color);
+    padding: 0.8rem 1.6rem;
+    border-bottom: 1px solid #e2e2e2;
+    transition: background-color 0.15s linear;
+}
+
+.modal__bookingcode-room-item:hover {
+    background-color: var(--primary-color);
+}
+
+.modal__bookingcode-room-title {
+    display: inline-block;
+    min-width: 10rem;
+}
+
+/* .modal__bookingcode-room-type {} */
+
+/* .modal__bookingcode-room-qtt {} */
+
+
+.modal__bookingcode-back-btn {
+	position: absolute;
+	bottom: 1.6rem;
+	right: 1.6rem;
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    color: var(--text-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.15s linear;
+}
+
+.modal__bookingcode-back-btn:hover {
+    color: var(--white-color);
+}
+
+.modal__bookingcode-close-btn {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    padding: 0.4rem 1.1rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    border-radius: 3px;
+}
+
+.modal__roomType-list {
+    margin-top: 1.2rem;
+    height: 45%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-degree);
+}
+
+.modal__roomType-list-table {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.modal__roomType-list-table tbody td:nth-child(1),
+.modal__roomType-list-table thead th:nth-child(1) {
+    width: 300px;
+}
+
+/* .modal__roomType-list-table tbody td:nth-child(2),
+.modal__roomType-list-table thead th:nth-child(2) {
+    width: 175px;
+} */
+
+
+.modal__roomType-list-table thead {
+    text-transform: uppercase;
+    background-color: var(--blue-3-color);
+    border-bottom: 1px solid #ccc;
+
+    display:table;
+    height: 18%;
+    table-layout:fixed;
+    width: 100%;
+}
+
+.modal__roomType-list-table tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+.modal__roomType-list-table thead th {
+    padding: 0 1.6rem;
+}
+
+.modal__roomType-list-table tbody {
+    display: block;
+    height: 82%;
+    overflow: auto;
+    background-color: var(--white-color);
+}
+
+.modal__roomType-list-table tbody tr {
+    padding: 0.8rem 1.6rem;
+    border-bottom: 1px solid #e2e2e2;
+    transition: all 0.15s linear;
+}
+
+.modal__roomType-list-table tbody tr:not(.modal__roomType-list--editting):hover {
+    border-left: 5px solid var(--blue-2-color);
+    background-color: var(--blue-1-color);
+}
+
+.modal__roomType-list-table tbody td {
+    padding: 0.8rem 1.6rem
+}
+
+/*------------------------------------RoomTypeService--------------------------------- */
+.management__services-table thead th:nth-child(1),
+.management__services-table thead th:nth-child(4) {
+    width: 17%;
+}
+
+.management__services-table thead th:nth-child(2),
+.management__services-table thead th:nth-child(3) {
+    width: 23%;
+}
+
+.management__services-table thead th:nth-child(5) {
+    width: 20%;
+}
+
+/* .management__dashboard-pagination {} */
+
+.management__services-table-view-detail {
+    padding: 0.4rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-width: 8rem;
+    text-align: center;
+}
+
+.management__services-table-view-detail:hover {
+    color: var(--white-color);
+}
+
+/* Modal */
+.modal__service {
+    position: relative;
+    width: 650px;
+    height: 550px;
+    background-color: var(--blue-1-color);
+    border-radius: 10px;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+}
+
+.modal__service-heading {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.modal__service-infor {
+    margin-top: 0.8rem;
+    border-radius: 5px;
+}
+
+.modal__service-infor-detail {
+    display: flex;
+    align-items: center;
+    margin: 0.4rem 0;
+}
+
+.modal__service-infor-title {
+    display: inline-block;
+    min-width: 15rem;
+    font-weight: 500;
+}
+
+.modal__service-infor-desc {
+    font-weight: 400;
+}
+
+.modal__service-room-upper {
+	display: flex;
+	margin-top: 3.2rem;
+	align-items: center;
+}
+
+.modal__service-room-heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.modal__service-new {
+    margin-left: 1.6rem;
+}
+
+.modal__service-new-btn {
+    padding: 0.4rem 0.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.modal__service-new-btn:hover {
+    color: var(--white-color);
+}
+
+.modal__service-list {
+    margin-top: 1.2rem;
+    height: 45%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-degree);
+}
+
+.modal__service-list-table {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.modal__service-list-table tbody td:nth-child(1),
+.modal__service-list-table thead th:nth-child(1) {
+    width: 260px;
+}
+
+.modal__service-list-table tbody td:nth-child(2),
+.modal__service-list-table thead th:nth-child(2) {
+    width: 165px;
+}
+
+
+.modal__service-list-table thead {
+    text-transform: uppercase;
+    background-color: var(--blue-3-color);
+    border-bottom: 1px solid #ccc;
+
+    display:table;
+    height: 18%;
+    table-layout:fixed;
+    width: 100%;
+}
+
+.modal__service-list-table tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+.modal__service-list-table thead th {
+    padding: 0 1.6rem;
+}
+
+.modal__service-list-table tbody {
+    display: block;
+    height: 82%;
+    overflow: auto;
+    background-color: var(--white-color);
+}
+
+.modal__service-list-table tbody tr {
+    padding: 0.8rem 1.6rem;
+    border-bottom: 1px solid #e2e2e2;
+    transition: all 0.15s linear;
+}
+
+.modal__service-list-table tbody tr:not(.modal__service-list--editting):hover {
+    border-left: 5px solid var(--blue-2-color);
+    background-color: var(--blue-1-color);
+}
+
+.modal__service-list-table tbody td {
+    padding: 0.8rem 1.6rem
+}
+
+.modal__service-list--editting .modal__service-list-table-select,
+.modal__service-list--editting .modal__service-list-table-input {
+    display: block;
+}
+
+.modal__service-list--editting .modal__service-save-btns {
+    display: flex;
+}
+
+.modal__service-list--editting .modal__service-list-table-name,
+.modal__service-list--editting .modal__service-list-table-date,
+.modal__service-list--editting .modal__service-edit-btns {
+    display: none;
+}
+
+.modal__service-edit-btns {
+    display: flex;
+}
+
+.modal__service-save-btns {
+    display: none;
+}
+
+.modal__service-save-btn,
+.modal__service-edit-btn,
+.modal__service-delete-btn,
+.modal__service-uneditable-btn {
+    padding: 0.4rem 0rem;
+    min-width: 6rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.modal__service-uneditable-btn {
+    background-color: var(--blue-2-color);
+    color: var(--white-color);
+    cursor: default;
+}
+
+.modal__service-save-btn:hover,
+.modal__service-edit-btn:hover,
+.modal__service-delete-btn:hover {
+    color: var(--white-color);
+}
+
+.modal__service-delete-btn {
+    margin-left: 0.8rem;
+}
+
+.modal__service-list-table-input,
+.modal__service-list-table-select {
+    display: none;
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+}
+
+.modal__service-list-table-input.error {
+	background-color: #e6a7a7;
+    border: 1px solid var(--cancel-button-color);
+}
+
+.modal__service-list-error {
+	margin-top: 2.4rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: right;
+	color: var(--cancel-button-color);
+}
+
+.modal__service-back-btn-block {
+    position: absolute;
+    bottom: 1.6rem;
+    right: 1.6rem;
+}
+
+.modal__service-ok-btn,
+.modal__service-cancel-btn {
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    color: var(--text-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.modal__service-ok-btn:hover,
+.modal__service-cancel-btn:hover {
+    color: var(--white-color);
+}
+
+.modal__service-ok-btn {
+    margin-left: 1.6rem;
+}
+
+.modal__service-close-btn {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    padding: 0.4rem 1.1rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    border-radius: 3px;
+}
+
+.modal__service-close-btn:hover {
+    color: var(--white-color);
+}
+/*------------------------------------Check in--------------------------------- */
+.management__checkin-steps {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.management__checkin-step {
+    padding: 0.8rem 1.6rem;
+    font-weight: 500;
+}
+
+.management__checkin-step-number {
+    padding: 0.8rem 1.6rem;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    box-shadow: 0 0 11px 1.4px rgb(0 0 0 / 10%)
+}
+
+.management__checkin-step-title {
+    font-size: 1.6rem;
+    margin-left: 0.8rem;
+}
+
+.management__checkin-step.active .management__checkin-step-number {
+    background-color: var(--blue-3-color);
+}
+
+.management__checkin-step.active .management__checkin-step-title {
+    color: var(--blue-3-color);
+}
+
+.management__checkin-code {
+    width: 80%;
+}
+
+.management__checkin-code-heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.management__checkin-code-body {
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+
+.management__checkin-code-detail {
+    padding: 0.4rem 0;
+}
+
+.management__checkin-code-title {
+    display: inline-block;
+    min-width: 13rem;
+    font-weight: 500;
+}
+
+/* .management__checkin-code-desc {} */
+
+.management__checkin-room {
+    margin-top: 2.8rem;
+}
+
+.management__checkin-room-heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.management__checkin-room-table {
+    width: 60%;
+}
+
+.management__room-selection {
+    margin-top: 3.2rem;
+}
+
+.management__room-selection-heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.management__room-selection-frame {
+    margin-top: 0.8rem;
+    padding: 1.6rem;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-degree);
+}
+
+.management__room-annotations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.management__room-annotations-status {
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.management__room-annotations-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.management__room-annotations-color {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 3px;
+    box-shadow: var(--box-shadow-degree);
+}
+
+.management__room-annotations-color.available {
+    background-color: #378237;
+}
+
+.management__room-annotations-color.usable {
+    background-color: var(--white-color);
+}
+
+.management__room-annotations-color.being-used {
+    background-color: var(--blue-4-color);
+}
+
+.management__room-annotations-color.not-available {
+    background-color: var(--cancel-button-color);
+}
+
+.management__room-annotations-color.different-type {
+    background-color: var(--yellow-color);
+}
+
+.management__room-annotations-desc {
+    font-weight: 500;
+    margin-left: 0.8rem;
+}
+
+.management__room-remain {
+    width: 30%;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.management__room-remain-detail {
+    padding: 0.4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.management__room-remain-type {
+    font-weight: 500;
+}
+
+/* .management__room-remain-qtt {} */
+
+.management__room-remain-number {
+    font-weight: 500;
+    color: var(--cancel-button-color);
+    width: 1.6rem;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.management__room-remain-unit {
+    display: inline-block;
+    min-width: 7rem;
+}
+
+.management__room-all {
+    margin-top: 3.2rem;
+}
+
+.management__room-all--available {
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.management__room-all--available:hover {
+    background-color: #b7e8b7;
+}
+
+.management__room-all--being-used {
+    background-color: #3f5c86;
+    cursor: default; 
+}
+
+.management__room-all--not-available {
+    background-color: var(--cancel-button-color);
+    cursor: default;
+}
+
+.management__room-all--different-type {
+    background-color: var(--yellow-color);
+    cursor: default;
+}
+
+.management__room-all-detail {
+    display: block;
+    text-align: center;
+    padding: 0.4rem 0.8rem;
+    margin-top: 1.6rem;
+    min-height: 67px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    box-shadow: var(--box-shadow-degree);
+    user-select: none;
+}
+
+.management__room-all-type {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.management__room-all-name,
+.management__room-all-type {
+    text-transform: uppercase;
+}
+
+.management__room-all-detail input {
+    cursor: pointer;
+}
+
+.management__room-all-detail.active {
+    background-color: #378237;
+}
+
+.management__room-selection-action {
+    text-align: right;
+    margin-top: 1.6rem;
+}
+
+.management__room-error-message {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--cancel-button-color);
+	text-align: right;
+	margin-top: 1.6rem;
+	min-height: 2.2rem;
+}
+
+.management__room-selection-prev-btn {
+    margin-right: 1.6rem;
+}
+
+.management__room-selection-prev-btn,
+.management__room-selection-next-btn {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    color: var(--text-color);
+}
+
+.management__room-selection-prev-btn:hover,
+.management__room-selection-next-btn:hover {
+    color: var(--white-color);
+}
+
+.management__checkin-finish {
+    margin-top: 2.8rem;
+}
+
+.management__checkin-finish-heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.management__checkin-finish-table {
+    width: 100%;
+}
+
+.management__checkin-finish-table thead {
+    height: 50px;
+}
+
+.management__checkin-finish-table th:nth-child(1),
+.management__checkin-finish-table th:nth-child(2),
+.management__checkin-finish-table th:nth-child(3) {
+    width: 25%;
+}
+
+.management__checkin-finish-table th:nth-child(4) {
+    width: 25%;
+}
+
+.management__checkin-finish-table-select {
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+/*------------------------------------Check in--------------------------------- */
+.management__service-list {
+    margin-top: 3.2rem;
+    font-size: 1.5rem;
+}
+
+.management__service-list-heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.management__service-list-table {
+    width: 80%;
+}
+
+.management__service-list-table th:nth-child(1),
+.management__service-list-table th:nth-child(3),
+.management__service-list-table th:nth-child(4) {
+    width: 25%;
+}
+
+.management__service-list-table th:nth-child(2) {
+    width: 25%;
+}
+
+.management__service-payment {
+    margin-top: 3.2rem;
+}
+
+.management__service-payment-heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.management__service-payment-table {
+    width: 100%;
+}
+
+.management__service-payment-table th:nth-child(1) {
+    width: 25%;
+}
+.management__service-payment-table th:nth-child(2),
+.management__service-payment-table th:nth-child(3),
+.management__service-payment-table th:nth-child(4),
+.management__service-payment-table th:nth-child(6) {
+    width: 14%;
+}
+
+.management__service-payment-table th:nth-child(5) {
+    width: 19%;
+}
+
+.management__service-payment-btns {
+    margin-top: 3.2rem;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.management__service-payment-cancel,
+.management__service-payment-print {
+    margin-right: 0.8rem;
+}
+
+.management__service-payment-cancel,
+.management__service-payment-print,
+.management__service-payment-ok {
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.management__service-payment-cancel:hover,
+.management__service-payment-print:hover,
+.management__service-payment-ok:hover {
+	color: var(--white-color);
+}
+
+.management__service-payment-infos {
+	margin-top: 1.6rem;
+}
+
+.management__service-payment-list {
+	width: 40%;
+	background-color: var(--white-color);
+	padding: 0.8rem 1.6rem;
+	margin-bottom: 0;
+	margin-left: auto;
+	font-size: 1.5rem;
+	border-radius: 5px;
+	box-shadow: var(--box-shadow-degree);
+}
+
+.management__service-payment-item {
+	display:flex;
+	align-items: center;
+	padding: 0.8rem 0;
+}
+
+.management__service-payment-title {
+	flex: 1;
+	font-weight: 500;
+}
+
+.management__service-payment-desc {
+	flex: 0.7;
+	font-weight: 400;
+	text-align: right;
+	font-size: 1.6rem;
+}
+
+
+
+/* ------------------------Manager - Homepage ------------------------*/
+
+.management__customer-request-table thead th:nth-child(1) {
+    width: 20%;
+}
+
+.management__customer-request-table thead th:nth-child(2) {
+    width: 26%;
+}
+
+.management__customer-request-table thead th:nth-child(3) {
+	width: 20%;
+}
+
+.management__customer-request-table thead th:nth-child(4),
+.management__customer-request-table thead th:nth-child(5) {
+    width: 17%;
+}
+
+.management__customer-request-btn {
+    padding: 0.4rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-width: 9rem;
+    text-align: center;
+}
+
+.management__customer-request-btn:hover {
+    color: var(--white-color);
+}
+
+/* ------------------------Manager - All Customer ------------------------*/
+.management__customer-table th:nth-child(1),
+.management__customer-table th:nth-child(2) {
+    width: 19%;
+}
+
+.management__customer-table th:nth-child(3),
+.management__customer-table th:nth-child(4) {
+    width: 15%;
+}
+
+.management__customer-table th:nth-child(5),
+.management__customer-table th:nth-child(6) {
+    width: 16%;
+}
+
+/* ------------------------Manager - Customer Request ------------------------*/
+.management__cancel-request,
+.management__booking-payment {
+    margin-top: 1.6rem;
+}
+
+.management__cancel-request-heading,
+.management__booking-payment-heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.management__booking-payment-table {
+    width: 100%;
+}
+
+.management__booking-payment-table th:nth-child(2) {
+	width: 18%;
+}
+
+.management__booking-payment-table th:nth-child(3) {
+	width: 12%;
+}
+
+.management__booking-payment-table th:nth-child(1),
+.management__booking-payment-table th:nth-child(4),
+.management__booking-payment-table th:nth-child(5),
+.management__booking-payment-table th:nth-child(6),
+.management__booking-payment-table th:nth-child(7){
+    width: 14%;
+}
+
+.management__booking-payment-table-total:nth-last-child(3) {
+    border-top: 2px solid var(--blue-3-color);
+}
+
+.management__booking-payment-table-total {
+    border-bottom: none !important;
+}
+
+.management__booking-payment-table-total:hover {
+    background-color: var(--white-color) !important;
+    border-left: none !important;
+}
+
+.management__cancel-request-table {
+    width: 100%;
+}
+
+
+.management__cancel-request-table-total:nth-last-child(3) {
+    border-top: 2px solid var(--blue-3-color);
+}
+
+.management__cancel-request-table-total {
+    border-bottom: none !important;
+}
+
+.management__cancel-request-table-total:hover {
+    background-color: var(--white-color) !important;
+    border-left: none !important;
+}
+
+.management__payment-infos {
+    margin-top: 1.6rem;
+}
+
+.management__payment-hotel,
+.management__payment-info,
+.management__payment-customer {
+    margin-top: 0.8rem;
+}
+
+.management__payment-info-heading,
+.management__payment-hotel-heading,
+.management__payment-customer-heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.management__payment-info-details,
+.management__payment-hotel-details,
+.management__payment-customer-details {
+    margin-top: 0.8rem;
+    padding: 0.8rem 1.6rem;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    min-height: 8.8rem;
+}
+
+.management__payment-info-detail,
+.management__payment-hotel-detail,
+.management__payment-customer-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0;
+}
+
+.management__payment-info-title,
+.management__payment-hotel-label,
+.management__payment-customer-title {
+    font-weight: 500;
+    min-width: 50%;
+}
+
+/* .management__payment-customer-desc {} */
+
+.management__payment-info-number {
+    font-size: 1.6;
+}
+
+.management__payment-hotel-input {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 0.4rem 0.8rem;
+}
+
+.management__payment-hotel-input:read-only {
+	background-color: #ccc;
+	outline: none;
+    text-align: right;
+}
+
+.management__payment-hotel-err {
+    color: var(--cancel-button-color);
+}
+
+.management__payment-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.management__payment-back-btn,
+.management__payment-decline-btn,
+.management__payment-confirm-btn {
+    min-width: 10rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.8rem 0;
+}
+
+.management__payment-back-btn:hover, 
+.management__payment-decline-btn:hover,
+.management__payment-confirm-btn:hover {
+    color: var(--white-color);
+}
+
+.management__payment-back-btn,
+.management__payment-decline-btn {
+    margin-right: 0.8rem;
+}
+
+/* .management__payment-confirm-btn {} */
+
+.management__customer-request-finish {
+    display: flex;
+}
+
+.management__notification {
+    margin: auto;
+    font-size: 1.5rem;
+    width: 40%;
+}
+
+.management__notification.decline,
+.management__notification.success {
+    --kind-of-color: var(--done-button-color);
+}
+
+.management__notification.failure {
+    --kind-of-color: var(--cancel-button-color);
+}
+
+.management__notification.decline div[data-decline-type] {
+	display: block;
+}
+
+.management__notification.success div[data-success-type] {
+	display: block;
+}
+
+.management__notification.failure div[data-failure-type] {
+	display: block;
+}
+
+.management__notification-heading {
+    text-align: center;
+	display: none;
+}
+
+.management__notification-icon {
+    font-size: 7rem;
+    color: var(--kind-of-color);
+}
+
+.management__notification-heading-desc {
+	font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1.8rem;
+}
+
+.management__notification-infos {
+    margin-top: 1.6rem;
+}
+
+.management__notification-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+}
+
+.management__notification-title {
+    font-weight: 500;
+}
+
+/* .management__notification-desc {} */
+
+.management__notification-back {
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+.management__notification-back-btn {
+    min-width: 10rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.8rem 0;
+    text-align: center;
+}
+
+.management__notification-back-btn:hover {
+    color: var(--white-color)
+}
+
+/* ------------------------Manager - Room ------------------------*/
+/* .management__room-statistics {} */
+/* .management__room-statistics-table {} */
+
+.management__room-rooms-heading,
+.management__room-statistics-heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-right: 1.6rem;
+}
+
+.management__room-rooms {
+    margin-top: 3.2rem;
+}
+
+.management__room-rooms-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.management__room-rooms-new {
+    padding: 0.4rem 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.management__room-rooms-new:hover {
+    color: var(--white-color);
+}
+
+.management__room-view--available {
+    background-color: var(--white-color);
+    cursor: pointer;
+    transition: background-color 0.15s ease-in;
+}
+
+.management__room-view--available:hover {
+	background-color: var(--blue-2-color);
+}
+
+.management__room-view--being-used {
+    background-color: var(--blue-3-color);
+    cursor: pointer;
+    transition: background-color 0.15s ease-in;
+}
+
+.management__room-view--being-used:hover {
+	background-color: var(--blue-4-color);
+}
+
+.management__room-view--not-available {
+    background-color: var(--cancel-button-color);
+    cursor: pointer;
+	transition: background-color 0.15s ease-in;
+}
+
+.management__room-view--not-available:hover{
+    background-color: var(--red-hover-color);
+}
+
+/* Modal */
+.modal__rooms-form {
+    position: relative;
+    background-color: var(--primary-color);
+    height: 480px;
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-degree);
+    padding: 1.6rem;
+}
+
+.modal__rooms-form-inputs {
+    display: none;
+}
+
+.modal__rooms-form-view {
+    display: block;
+}
+/* Create mode */
+.modal__rooms-form.create .modal__rooms-form-inputs {
+    display: block;
+}
+
+.modal__rooms-form.create .modal__rooms-form-view {
+    display: none;
+}
+
+.modal__rooms-form.create .modal__rooms-form-create-btns {
+    display: flex;
+}
+
+.modal__rooms-form.create .modal__rooms-form-view-btns,
+.modal__rooms-form.create .modal__rooms-form-edit-btns,
+.modal__rooms-form.create .modal__rooms-form-uneditale-btns {
+    display: none;
+}
+/* Edit mode */
+.modal__rooms-form.edit .modal__rooms-form-inputs {
+    display: block;
+}
+
+.modal__rooms-form.edit .modal__rooms-form-view {
+    display: none;
+}
+
+.modal__rooms-form.edit .modal__rooms-form-edit-btns {
+    display: flex;
+}
+
+.modal__rooms-form.edit .modal__rooms-form-view-btns,
+.modal__rooms-form.edit .modal__rooms-form-create-btns,
+.modal__rooms-form.edit .modal__rooms-form-uneditale-btns {
+    display: none;
+}
+/* Uneditable mode */
+.modal__rooms-form.uneditable .modal__rooms-form-uneditale-btns {
+    display: flex;
+}
+
+.modal__rooms-form.uneditable .modal__rooms-form-create-btns,
+.modal__rooms-form.uneditable .modal__rooms-form-edit-btns,
+.modal__rooms-form.uneditable .modal__rooms-form-view-btns {
+    display: none;
+}
+
+.modal__rooms-form-heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.modal__rooms-form-details {
+    margin-top: 0.8em;
+    font-size: 1.5rem;
+}
+
+
+.modal__rooms-form-detail {
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+
+.modal__rooms-form-title {
+    width: 28%;
+}
+
+.modal__rooms-form-input,
+.modal__rooms-form-type-select, 
+.modal__rooms-form-status-select {
+    min-width: 25rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.modal__rooms-form-input.error {
+	background-color: #e6a7a7;
+    border: 1px solid var(--cancel-button-color);
+}
+
+.modal__rooms-form-infos {
+    margin-top: 1.6rem;
+}
+
+.modal__rooms-form-info {
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.modal__room-type-detail {
+    display: flex;
+    padding: 0.4rem 0;
+    align-items: flex-start;
+}
+
+.modal__room-type-info {
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.modal__room-type-title {
+    flex: 2.8;
+}
+
+.modal__room-type-desc {
+    flex: 7.2;
+}
+
+.modal__room-type-desc--height {
+    min-height: 7rem;
+}
+
+.modal__rooms-form-error {
+	position: absolute;
+    bottom: 6.8rem;
+    right: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--cancel-button-color);
+}
+
+.modal__rooms-form-view-btns {
+    display: flex;
+}
+
+.modal__rooms-form-create-btns,
+.modal__rooms-form-edit-btns,
+.modal__rooms-form-uneditale-btns {
+    display: none;
+}
+
+.modal__rooms-form-create-btns,
+.modal__rooms-form-edit-btns,
+.modal__rooms-form-view-btns,
+.modal__rooms-form-uneditale-btns {
+    position: absolute;
+    bottom: 1.6rem;
+    left: 1.6rem;
+    right: 1.6rem;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+/* .modal__rooms-form-btn-right {}
+.modal__rooms-form-btn-left {} */
+
+.modal__rooms-form-back-btn,
+.modal__rooms-form-save-btn,
+.modal__rooms-form-delete-btn,
+.modal__rooms-form-cancel-btn,
+.modal__rooms-form-edit-btn {
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+
+.modal__rooms-form-back-btn:hover,
+.modal__rooms-form-save-btn:hover,
+.modal__rooms-form-delete-btn:hover,
+.modal__rooms-form-cancel-btn:hover,
+.modal__rooms-form-edit-btn:hover {
+    color: var(--white-color);
+}
+
+.modal__rooms-form-cancel-btn,
+.modal__rooms-form-back-btn {
+    margin-right: 0.8rem;
+}
+
+.modal__rooms-close-btn {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    font-size: 1.5rem;
+    padding: 0.4rem 1.1rem;
+    color: var(--white-color);
+}
+
+.modal__confirm-delete {
+    min-width: 400px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    border: 3px solid var(--type-color);
+    font-size: 1.5rem;
+}
+
+.modal__confirm-delete.warning-type {
+    --type-color: var(--yellow-color);
+}
+
+.modal__confirm-delete.success-type {
+    --type-color: var(--done-button-color);
+}
+
+.modal__confirm-delete-wrapper {
+    width: 80%;
+    text-align: center;
+    margin: 1.6rem auto;
+}
+
+.modal__confirm-delete-heading {
+    font-size: 7rem;
+    color: var(--type-color);
+    margin-top: 1.6rem;
+}
+
+.modal__confirm-delete-desc {
+	margin-top: 1.6rem;
+    font-weight: 500;
+}
+
+.modal__confirm-home-link {
+	display: inline-block;
+    margin: auto;
+    margin-top: 1.6rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    min-width: 10rem;
+}
+
+.modal__confirm-home-link:hover {
+	color: var(--white-color);
+}
+
+.modal__confirm-delete-room {
+    color: var(--cancel-button-color);
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
+}
+
+.modal__confirm-delete-btns {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__confirm-delete-no-btn,
+.modal__confirm-delete-yes-btn {
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.modal__confirm-delete-no-btn:hover,
+.modal__confirm-delete-yes-btn:hover {
+    color: var(--white-color);
+}
+
+/* ------------------------Manager - Room Type ------------------------*/
+.management__room-type-new {
+    margin-top: 1.6rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.management__room-type-new:hover {
+    color: var(--white-color);
+}
+
+.management__room-type-table th:nth-child(1),
+.management__room-type-table th:nth-child(3) {
+    width: 16%;
+}
+
+.management__room-type-table th:nth-child(2) {
+    width: 20%;
+}
+
+.management__room-type-table th:nth-child(4),
+.management__room-type-table th:nth-child(5) {
+    width: 24%;
+}
+
+/* .management__room-type-table-btns {} */
+
+.management__room-type-edit-btn,
+.management__room-type-delete-btn {
+    padding: 0.4rem 0;
+    min-width: 7rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.management__room-type-edit-btn {
+    margin-right: 0.8rem;
+}
+
+.management__room-type-edit-btn:hover,
+.management__room-type-delete-btn:hover {
+    color: var(--white-color);
+}
+
+.management__room-type-expired-btn {
+	padding: 0.4rem 0;
+    min-width: 7rem;
+	margin-right: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+    cursor: default;
+    color: var(--white-color);
+    background-color: var(--blue-2-color);
+}
+
+.management__room-type-uneditable-btn {
+    padding: 0.4rem 0;
+    min-width: 10rem;
+    text-align: center;
+    font-weight: 500;
+    cursor: default;
+    color: var(--white-color);
+    background-color: var(--blue-2-color);
+}
+
+.management__room-type-heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+	margin: 1.6rem 0;
+}
+
+.management__room-type-form {
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.management__room-type-details {
+    margin: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+.management__room-type-detail {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
+.management__room-type-title {
+    flex: 4;
+}
+
+.management__room-type-wrapper {
+	flex : 6;
+}
+
+.management__room-type-file {
+	padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.management__room-type-input {
+    flex : 6;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.management__room-type-input.error {
+    background-color: #e6a7a7;
+    border: 1px solid var(--cancel-button-color);
+}
+
+.management__room-type-img {
+	width: 100%;
+	box-shadow: var(--box-shadow-blue);
+}
+
+.management__room-type-btns {
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.management__room-type-error {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    height: 2.2rem;
+    color: var(--cancel-button-color);
+}
+
+.management__room-type-save-btn,
+.management__room-type-cancel-btn {
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.management__room-type-save-btn:hover,
+.management__room-type-cancel-btn:hover {
+    color: var(--white-color);
+}
+
+.management__room-type-save-btn {
+    margin-left: 1.6rem;
+}
+/* ------------------------Manager - RoomTypeService ------------------------*/
+.management__setup-service-table th:nth-child(1),
+.management__setup-service-table th:nth-child(2),
+.management__setup-service-table th:nth-child(3),
+.management__setup-service-table th:nth-child(4) {
+    width: 25%;
+}
+
+.modal__service-form {
+    position: relative;
+    background-color: var(--primary-color);
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-degree);
+    padding: 1.6rem;
+}
+
+.modal__service-form-details {
+    width: 85%;
+    margin-top: 0.8em;
+    font-size: 1.5rem;
+}
+
+.modal__service-form-title {
+    flex: 4;
+}
+
+.modal__service-form-input {
+    flex: 6;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.modal__service-form-input.error {
+	background-color: #e6a7a7;
+    border: 1px solid var(--cancel-button-color);
+}
+
+
+.modal__service-form-input[data-promo-code] {
+	text-transform: uppercase;
+}
+
+.modal__service-form-input.error {
+	background-color: #e6a7a7;
+    border: 1px solid var(--cancel-button-color);
+}
+
+.modal__service-form-edit-btns {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 1.6rem;
+    left: 1.6rem;
+    right: 1.6rem;
+    font-size: 1.5rem;
+}
+
+.modal__rooms-form-desc {
+    flex: 6;
+}
+
+/* ------------------------Manager - promotionService ------------------------*/
+.management__service-promotion-table th:nth-child(1),
+.management__service-promotion-table th:nth-child(3),
+.management__service-promotion-table th:nth-child(4),
+.management__service-promotion-table th:nth-child(5) {
+    width: 20%;
+}
+
+.management__service-promotion-table th:nth-child(2) {
+    width: 20%;
+}
+
+.management__service-promo-status--available, 
+.management__service-promo-status--being-used, 
+.management__service-promo-status--expired {
+	display: inline-block;
+    padding: 0.4rem 0.8rem;
+    min-width: 10rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+	user-select: none;
+}
+
+.management__service-promo-status--available {
+	background-color: var(--done-button-color);
+}
+
+.management__service-promo-status--being-used {
+	background-color: var(--blue-3-color);
+}
+
+.management__service-promo-status--expired {
+	background-color: var(--yellow-color);
+}
+
+
+.management__service-promotion-btn {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.4rem 0;
+    min-width: 9rem;
+    text-align: center;
+}
+
+.management__service-promotion-btn:hover {
+    color: var(--white-color);
+}
+
+.modal__service-promotion {
+    position: relative;
+    width: 650px;
+    height: 540px;
+    background-color: var(--blue-1-color);
+    border-radius: 10px;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+}
+/* Create mode */
+.modal__service-promotion.create .modal__service-promotion-desc,
+.modal__service-promotion.create .modal__service-read-only-btns,
+.modal__service-promotion.create .modal__service-promotion-edit,
+.modal__service-promotion.create .modal__service-promotion-read-only,
+.modal__service-promotion.create .modal__service-promotion-delete-only {
+    display: none;
+}
+
+/* Edit mode */
+
+.modal__service-promotion.editable .modal__service-promotion-desc,
+.modal__service-promotion.editable .modal__service-read-only-btns,
+.modal__service-promotion.editable .modal__service-promotion-create,
+.modal__service-promotion.editable .modal__service-promotion-read-only,
+.modal__service-promotion.editable .modal__service-promotion-delete-only {
+    display: none;
+}
+
+/* Uneditable mode */
+.modal__service-promotion.uneditable .modal__service-promotion-input,
+.modal__service-promotion.uneditable .modal__applied-service-new-btn,
+.modal__service-promotion.uneditable .modal__service-edit-btns,
+.modal__service-promotion.uneditable .modal__service-save-btns,
+.modal__service-promotion.uneditable .modal__service-promotion-create,
+.modal__service-promotion.uneditable .modal__service-promotion-edit,
+.modal__service-promotion.uneditable .modal__service-promotion-delete-only {
+    display: none;
+}
+
+/* Delete only */
+.modal__service-promotion.deleteOnly .modal__service-promotion-input,
+.modal__service-promotion.deleteOnly .modal__applied-service-new-btn,
+.modal__service-promotion.deleteOnly .modal__service-edit-btns,
+.modal__service-promotion.deleteOnly .modal__service-save-btns,
+.modal__service-promotion.deleteOnly .modal__service-promotion-create,
+.modal__service-promotion.deleteOnly .modal__service-promotion-edit,
+.modal__service-promotion.deleteOnly .modal__service-promotion-read-only {
+	display: none;
+}
+
+.modal__applied-service-heading,
+.modal__service-promotion-heading {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.modal__service-promotion-infor {
+    margin-top: 0.8rem;
+    width: 65%;
+}
+
+.modal__service-promotion-detail {
+    display: flex;
+    align-items: center;
+    min-height: 4.5rem;
+}
+
+.modal__service-promotion-title {
+    flex: 4.5;
+}
+
+.modal__service-promotion-input {
+    flex: 5.5;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.modal__service-promotion-input[data-promo-code] {
+	text-transform: uppercase;
+}
+
+.modal__service-promotion-input.error {
+	background-color: #e6a7a7;
+    border: 1px solid var(--cancel-button-color);
+}
+
+.modal__service-promotion-desc {
+    flex: 5.5;
+}
+
+.modal__applied-service-heading {
+    margin-top: 0.8rem;
+}
+
+.modal__applied-service-new-btn {
+    padding: 0.4rem 0.8rem;
+    font-weight: 500;
+    margin-top: 0.8rem;
+}
+
+.modal__applied-service-new-btn:hover {
+    color: var(--white-color);
+}
+
+.modal__service-promotion-error {
+	position: absolute;
+    height: 2.3rem;
+    bottom: 6.2rem;
+    right: 1.6rem;
+    left: 1.6rem;
+    color: red;
+    font-weight: 500;
+    text-align: right;
+	font-size: 1.5rem;
+}
+
+.modal__service-promotion-btns {
+    position: absolute;
+    bottom: 1.6rem;
+    right: 1.6rem;
+    left: 1.6rem;
+}
+
+.modal__service-promotion-read-only,
+.modal__service-promotion-create {
+    text-align: right;
+}
+
+.modal__service-promotion-edit,
+.modal__service-promotion-delete-only {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.modal__service-promotion-back-btn,
+.modal__service-promotion-save-btn,
+.modal__service-promotion-delete-btn {
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.modal__service-promotion-delete-btn {
+    padding: 0.8rem 1.6rem;
+}
+
+.modal__service-promotion-back-btn:hover,
+.modal__service-promotion-save-btn:hover,
+.modal__service-promotion-delete-btn:hover {
+    color: var(--white-color);
+}
+/* ------------------------Manager - roomPromotion ------------------------*/
+.management__room-promotion-table th:nth-child(1),
+.management__room-promotion-table th:nth-child(2),
+.management__room-promotion-table th:nth-child(5) {
+    width: 20%;
+}
+
+.management__room-promotion-table th:nth-child(3) {
+    width: 25%;
+}
+
+.management__room-promotion-table th:nth-child(4) {
+    width: 15%;
+}
+
+.management__room-promotion-table tr td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100px;
+}
+/* ------------------------Admin - All Account ------------------------*/
+.management__all-account-table th {
+    width: 25%;
+}
+
+.management__all-account-table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100px;
+}
+
+.management__all-account-table th:nth-child(1),
+.management__all-account-table th:nth-child(3),
+.management__all-account-table th:nth-child(4) {
+	width: 20%;
+}
+
+.management__all-account-table th:nth-child(2) {
+	width: 40%;
+}
+
+.management__account-status--active,
+.management__account-status--inactive {
+	display: inline-block;
+	padding: 0.4rem 0.8rem;
+	min-width: 7rem;
+	text-align: center;
+	font-weight: 500;
+	border-radius: 5px;
+}
+
+.management__account-status--active {
+	background-color: var(--done-button-color);
+}
+
+.management__account-status--inactive {
+	background-color: var(--cancel-button-color);
+}
+
+.modal__account-form {
+    position: relative;
+    background-color: var(--primary-color);
+    height: 480px;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-degree);
+    padding: 1.6rem;
+}
+
+.modal__account-form-details {
+    width: 85%;
+    margin-top: 0.8em;
+    font-size: 1.5rem;
+}
+
+.modal__account-form-title {
+    flex: 4;
+}
+
+.modal__account-form-select,
+.modal__account-form-input {
+    flex: 6;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.modal__account-form-input:read-only {
+	background-color: #ccc;
+	outline: none;
+}
+
+.modal__account-form-input.error {
+	background-color: #e6a7a7;
+    border: 1px solid var(--cancel-button-color);
+}
+
+.modal__list-role-title {
+	margin-top: 2.4rem;
+	display: flex;
+	align-items: center;
+}
+
+.modal__list-role-heading {
+	font-size: 1.8rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.modal__new-role-btn {
+    padding: 0.4rem 0.8rem;
+    font-weight: 500;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-left: 1.6rem;
+}
+
+.modal__new-role-btn:hover {
+    color: var(--white-color);
+}
+
+.modal__account-list {
+    margin-top: 1.2rem;
+    height: 185px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-degree);
+}
+
+.modal__account-list-table {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.modal__account-list-table tbody td:nth-child(1),
+.modal__account-list-table thead th:nth-child(1) {
+    width: 250px;
+}
+
+
+.modal__account-list-table thead {
+    text-transform: uppercase;
+    background-color: var(--blue-3-color);
+    border-bottom: 1px solid #ccc;
+    display:table;
+    height: 20%;
+    table-layout:fixed;
+    width: 100%;
+}
+
+.modal__account-list-table thead th {
+    padding: 0.8rem 1.6rem;
+}
+
+.modal__account-list-table tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+.modal__account-list-table tbody {
+    display: block;
+    height: 80%;
+    overflow: auto;
+    background-color: var(--white-color);
+}
+
+.modal__account-list-table tbody tr {
+    padding: 0.8rem 1.6rem;
+    border-bottom: 1px solid #e2e2e2;
+    transition: all 0.15s linear;
+}
+
+.modal__account-list-table tbody tr:not(.modal__account-list--editting):hover {
+    border-left: 5px solid var(--blue-2-color);
+    background-color: var(--blue-1-color);
+}
+
+.modal__account-list--editting .modal__account-user-role,
+.modal__account-list--editting .modal__account-edit-btns {
+	display: none;
+}
+
+.modal__account-list--editting .modal__account-role-selection {
+	display: block;
+}
+.modal__account-list--editting .modal__account-save-btns {
+	display: flex;
+}
+
+.modal__account-role-selection {
+	display: none;
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+}
+
+.modal__account-list-table tbody td {
+    padding: 0.8rem 1.6rem
+}
+
+.modal__account-save-btns {
+	display: none;
+}
+
+.modal__account-edit-btns {
+	display: flex;
+}
+.modal__account-edit-btn,
+.modal__account-save-btn,
+.modal__account-delete-btn {
+	padding: 0.4rem 0;
+    min-width: 7rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.modal__account-delete-btn {
+	margin-left: 0.8rem;
+}
+
+.modal__account-save-btn:hover,
+.modal__account-delete-btn:hover {
+	color: var(--white-color);
+}
+
+.modal__account-error-message {
+	position: absolute;
+    height: 2.3rem;
+    bottom: 6.2rem;
+    right: 1.6rem;
+    left: 1.6rem;
+    color: red;
+    font-weight: 500;
+    text-align: right;
+	font-size: 1.5rem;
+}
+.modal__account-form-btns {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 1.6rem;
+    left: 1.6rem;
+    right: 1.6rem;
+    font-size: 1.5rem;
+}
+
+.modal__account-form-save-btn,
+.modal__account-form-cancel-btn {
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+	margin-left: 1.6rem;
+}
+
+.modal__account-form-save-btn:hover,
+.modal__account-form-cancel-btn:hover {
+	color: var(--white-color);
+}
+
+.modal__account-close-btn {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    font-size: 1.5rem;
+    padding: 0.4rem 1.1rem;
+    color: var(--white-color);
+}
+
+
+/* ------------------------Change Password ------------------------*/
+.management__change-password {
+    margin: auto;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 1.6rem;
+    box-shadow: 0 0 2.4px 1.1px rgb(0 0 0 / 40%);
+}
+
+.management__change-password-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.management__change-password-forms {
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.management__change-password-form {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
+.management__change-password-title {
+    min-width: 20rem;
+    font-weight: 500;
+}
+
+.management__change-password-input {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.management__change-password-input:read-only {
+    background-color: #ccc;
+    outline: none;
+}
+
+.management__change-password-wrapper {
+    margin-top: 1.6rem;
+}
+
+.management__change-password-error {
+    text-align: right;
+    font-size: 1.4rem;
+    height: 2.1rem;
+    color: var(--cancel-button-color);
+}
+
+.management__change-password-btns {
+    text-align: right;
+}
+
+.management__change-password-back-btn,
+.management__change-password-confirm-btn {
+    padding: 0.8rem 0;
+    min-width: 10rem;
+	margin-left: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.management__change-password-back-btn:hover,
+.management__change-password-confirm-btn:hover {
+    color: var(--white-color);
+}
+/* ------------------------Not Found ------------------------*/
+.not-found {
+    margin-top: 102px;
+    margin-bottom: 48px;
+    min-height: 40vh;
+}
+.not-found__content {
+    background-color: var(--primary-color);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 1.6rem;
+}
+
+.not-found__content-icon {
+    font-size: 12rem;
+}
+.not-found__content-heading {
+    font-size: 7rem;
+}
+.not-found__content-detail {
+    font-size: 3rem;
+}
+.not-found__content-desc {
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+}
+/* Modal */
+.modal__type--exclamation {
+    --modal-type: #fbd447;
+}
+
+.modal__type--done {
+    --modal-type: var(--done-button-color);
+}
+
+.modal__notification {
+    color: var(--text-color);
+    width: 400px;
+    text-align: center;
+    background-color: var(--white-color);
+    border: 4px solid var(--modal-type);
+    border-radius: 10px;
+    user-select: none;
+    padding-bottom: 1.6rem;
+}
+
+.modal__notification-heading {
+    font-size: 6rem;
+    color: var(--modal-type);
+}
+
+.modal__notification-title {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+}
+
+.modal__notification-room {
+    margin-top: 0.8rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--cancel-button-color);
+}
+
+.modal__notification-buttons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 3.2rem;
+}
+
+.modal__notification-okay,
+.modal__notification-cancel,
+.modal__notification-confirm {
+    padding: 0.8rem;
+    color: var(--white-color);
+    min-width: 10rem;
+}

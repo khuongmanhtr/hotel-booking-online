@@ -1,0 +1,340 @@
+:root {
+    --primary-color: #e8e8e8;
+    --width-layout: 1200px;
+    --text-color: #222;
+    --white-color: #fff;
+    --modal-color: rgb(0, 0, 0, 0.4);
+    --done-button-color: #4bbf4b;
+	--green-hover-color: #378237;
+    --cancel-button-color: #ef3838;
+	--red-hover-color: #b52e2e;
+	--yellow-color: #e2bf54;
+	--yellow-hover-color: #8b7634;
+    /* --blue-3-color: #2C90C4; */
+    --staff-background-color: linear-gradient(90deg, #2C90C4, #31CCB0);
+	--blue-4-color: #3f5c86;
+    --blue-3-color: #588ace;
+    --blue-2-color: #8aaee0;
+	--blue-1-color: #ebf2fb;
+    --box-shadow-degree: 0 0 11px 1.4px rgba(0, 0, 0, 0.1);
+	--box-shadow-blue: 0 1.5px 3.5px 0.5px rgba(0, 4, 8, 0.25);
+	--box-shadow-button: 1px 1px 5px 0.4px rgb(0 0 0 / 10%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input::-webkit-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+/* Table */ 
+.table-background-layer {
+    margin-top: 1.6rem;
+    min-height: 50vh;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-degree);
+}
+
+.table-foreground-layer {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.table-background-layer-empty {
+	text-align: center;
+    font-size: 1.6rem;
+    margin-top: 4.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--cancel-button-color);
+}
+
+.table-foreground-layer thead {
+    background-color: var(--blue-3-color);
+    height: 5rem;
+}
+
+.table-foreground-layer th {
+    text-transform: uppercase;
+    padding: 0 1.6rem;
+    border-bottom: 1px solid #ccc; 
+    transition: background-color 0.15s ease-in;
+    user-select: none;
+}
+
+.table-foreground-layer th:hover {
+    background-color: var(--blue-2-color);
+    cursor: pointer;
+}
+
+.table-foreground-layer tbody tr {
+    border-bottom: 1px solid #e2e2e2;
+    transition: all 0.15s ease-in;
+    background-color: transparent;
+}
+
+.table-foreground-layer tbody tr:hover {
+    background-color: var(--blue-1-color);
+    border-left: 1rem solid var(--blue-2-color);
+}
+
+.table-foreground-layer td {
+    padding: 0.8rem 1.6rem; 
+}
+
+.table-minimal-type {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 0.8rem;
+    box-shadow: var(--box-shadow-degree);
+}
+
+.table-minimal-type thead {
+    background-color: var(--blue-3-color);
+}
+
+.table-minimal-type thead th {
+    padding: 0.8rem 1.6rem;
+    border-bottom: 1px solid #ccc; 
+    text-transform: uppercase;
+    transition: background-color 0.15s ease-in;
+    user-select: none;
+}
+
+.table-minimal-type thead th:hover {
+    background: var(--blue-2-color);
+    cursor: pointer;
+}
+
+.table-minimal-type tbody {
+    background-color: var(--white-color);
+}
+
+.table-minimal-type tbody tr {
+    border-bottom: 1px solid #e2e2e2;
+    transition: all 0.15s ease-in;
+}
+
+.table-minimal-type tbody tr:hover {
+    background-color: var(--blue-1-color);
+    border-left: 1rem solid var(--blue-2-color);
+}
+
+.table-minimal-type tbody td {
+    padding: 0.8rem 1.6rem;
+}
+
+/* Button */
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+.square-btn {
+    display: inline-block;
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-button);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.pill-btn {
+    display: inline-block;
+    color: var(--text-color);
+    border-radius: 25px;
+    box-shadow: var(--box-shadow-button);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.red-type-btn {
+    background-color: var(--cancel-button-color);
+    transition: all 0.15s ease-in;
+}
+
+.red-type-btn:hover {
+    background-color: var(--red-hover-color);
+}
+
+.blue-type-btn {
+    background-color: var(--blue-3-color);
+    transition: all 0.15s ease-in;
+}
+
+.blue-type-btn:hover {
+    background-color: var(--blue-4-color);
+	color: var(--white-color);
+}
+
+.green-type-btn {
+    background-color: var(--done-button-color);
+    transition: all 0.15s ease-in;
+}
+
+.green-type-btn:hover {
+    background-color: var(--green-hover-color);
+}
+
+.yellow-type-btn {
+    background-color: var(--yellow-color);
+    transition: all 0.15s ease-in;
+}
+
+.yellow-type-btn:hover {
+    background-color: #8b7634;
+}
+
+.black-type-btn {
+    color: var(--white-color);
+    background-color: #3f3f3f;
+    transition: all 0.15s ease-in;
+}
+
+.black-type-btn:hover {
+    background-color: #000;
+    color: var(--white-color);
+}
+
+.text-al-center {
+    text-align: center;
+}
+
+/* Input date css */
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+/* Input number css*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 12 column grid system */
+
+.grid {
+    width: var(--width-layout);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.grid-col {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.grid-col-1 {
+    width: calc(1 / 12 * 100%)
+}
+
+.grid-col-1-2 {
+    width: calc(1.2 / 12 * 100%)
+}
+
+.grid-col-2 {
+    width: calc(2 / 12 * 100%)
+}
+
+.grid-col-3 {
+    width: calc(3 / 12 * 100%)
+}
+
+.grid-col-4 {
+    width: calc(4 / 12 * 100%)
+}
+
+.grid-col-5 {
+    width: calc(5 / 12 * 100%)
+}
+
+.grid-col-6 {
+    width: calc(6 / 12 * 100%)
+}
+
+.grid-col-7 {
+    width: calc(7 / 12 * 100%)
+}
+
+.grid-col-8 {
+    width: calc(8 / 12 * 100%)
+}
+
+.grid-col-9 {
+    width: calc(9 / 12 * 100%)
+}
+
+.grid-col-10 {
+    width: calc(10 / 12 * 100%)
+}
+
+.grid-col-11 {
+    width: calc(11 / 12 * 100%)
+}
+
+.grid-col-12 {
+    width: calc(12 / 12 * 100%)
+}
+
+/* Animaition */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+/* Block scrollY when open modal */
+.modal-open {
+    overflow: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

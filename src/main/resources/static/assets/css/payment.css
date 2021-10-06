@@ -1,0 +1,141 @@
+.display-none {
+    display: none !important;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.booking {
+    margin-top: 102px;
+}
+
+.booking__step {
+    width: 80%;
+    margin: auto;
+}
+
+.booking__step-list {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.booking__step-item {
+    display: flex;    
+    align-items: center;
+}
+
+.booking__step-item-number {
+    padding: 0.8rem 1.6rem;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-right: 0.8rem;
+}
+
+.booking__step-item-number.active {
+    background-color: var(--yellow-color);
+}
+
+.booking__step-item-desc {
+    font-size: 2rem;
+}
+/* payment notification */
+.payment {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 96px;
+    margin-bottom: 48px;
+}
+
+.payment-notification {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 3.2rem 0;
+    box-shadow: 0 0 11px 1.4px rgb(0 0 0 / 31%);
+}
+
+/*.payment__noti {}*/
+
+/*.payment__noti-top {}*/
+
+.payment__noti-icon {
+    font-size: 10rem;
+    color: var(--payment-type);
+}
+
+.payment__type--success {
+    --payment-type: var(--done-button-color)
+}
+
+.payment__type--failure {
+    --payment-type: var(--cancel-button-color)
+}
+
+.payment__noti-heading {
+    margin-top: 1.6rem;
+    margin-bottom: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.payment__noti-desc {
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+}
+
+.payment__noti-info {
+    width: 40%;
+    margin:auto;
+    margin-top: 1.6rem;
+    padding-left: 0;
+    text-align: left;
+}
+
+.payment__noti-info-heading {
+    font-size: 2rem;
+    margin-top: 48px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.payment__noti-detail {
+    display: flex;
+    padding: 0.8rem 0;
+}
+
+.payment__noti-title {
+    display: inline-block;
+    padding-left: 4.8rem;
+    min-width: 25rem;
+    font-weight: 500;
+}
+
+/* .payment__noti-name {}
+
+.payment__noti-booking {} */
+
+.payment__noti-code {
+    font-weight: 500;
+    color: var(--cancel-button-color);
+}
+
+.payment__noti-copy {
+    margin-left: 1.6rem;
+    padding: 0.4rem 1.6rem;
+}
+
+.payment__homepage {
+    margin-top: 4.8rem;
+}
+
+.payment__homepage-link {
+    display: inline-block;
+    padding: 0.8rem 0;
+    min-width: 15rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
